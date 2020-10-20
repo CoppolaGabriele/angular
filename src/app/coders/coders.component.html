@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor = "let coder of coders">
+        <app-coder [coder]= "coder" (add100)="addedMoney($event)"></app-coder>
+    </li>
+</ul>
+        

@@ -1,0 +1,10 @@
+<h2>Add item</h2>
+<form>
+ <!-- #id e #name sono nomi di variabili che angular crea per rappresentare
+  gli input con quegli specifici attributi -->
+ <input placeholder="enter id" #id>
+ <input placeholder="name ..." #name>
+ <!-- (click) vuol indicare che sarà Angular a gestire l'evento del click 
+  attraverso un metodo -->
+ <button (click)="add(id, name);">OK </button>
+</form>
