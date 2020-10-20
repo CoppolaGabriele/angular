@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
@@ -8,6 +9,7 @@ import { UsersComponent } from './users/users.component';
 import { AddItemComponent } from './add-item/add-item.component';
 import { CodersComponent } from './coders/coders.component';
 import { CoderComponent } from './coder/coder.component';
+import { CoderFormComponent } from './coder-form/coder-form.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,12 @@ import { CoderComponent } from './coder/coder.component';
     UsersComponent,
     AddItemComponent,
     CodersComponent,
-    CoderComponent
+    CoderComponent,
+    CoderFormComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

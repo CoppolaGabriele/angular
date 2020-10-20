@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Coder } from './coder.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  title = 'My-First-App';
+
+
+  addCoder(coder: Coder) {
+    console.log(coder);
+    }
 }
+
+
