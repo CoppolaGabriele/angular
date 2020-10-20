@@ -1,0 +1,19 @@
+ 
+<ul>
+    <li *ngFor="let name of names">
+        <!-- Vengono connesse le components dove users che contiene la variabile "names" e che 
+            ogni elemento del names va nell'attributo "name" del component user-->
+         <app-user [name]="name"></app-user>
+    </li>
+</ul>
+
+
+<ul>
+    <!-- ngFor serve per fare un ciclo foreach per iterare sugli elementi della variabile "names" stampandole tante volte quante sono le proprietà al suo interno-->
+    <!--E' equivalente a
+        let names = ['a', 'b', 'c'];
+            for (let name of names) {
+                console.log(name);
+            }                       -->
+    <li *ngFor="let name of names">{{name}}</li>
+</ul>
