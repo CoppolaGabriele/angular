@@ -1,0 +1,10 @@
+<h2>Reactive Form 2</h2>
+    <form [formGroup]="fUser" (ngSubmit)="add()">
+        <div>
+            <label>Name<input formControlName="name"></label>
+        </div>
+        <div>
+            <label>likes<input type="number" formControlName="likes"></label>
+        </div>
+        <button>Submit</button>
+    </form>

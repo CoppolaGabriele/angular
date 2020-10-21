@@ -9,13 +9,13 @@ export class CoderFormComponent implements OnInit {
 
   model: Coder;
   @Output() out = new EventEmitter<Coder>();
-  
-  constructor() { 
-    this.model = new Coder('Bill','Babb', 4212);
+
+  constructor() {
+    this.model = new Coder('Bill', 'Babb', 4212);
   }
 
-  submit() { 
-    this.out.emit(this.model); 
+  submit() {
+    this.out.emit(this.model);
   }
 
   ngOnInit(): void {
@@ -23,4 +23,4 @@ export class CoderFormComponent implements OnInit {
 
 }
 
- 
+
